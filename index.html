@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="container">
+                <h1 class="main__title">
+                    Hello
+                </h1>
+                <form class="main__form" action="#">
+                    <h3 class="main__form-title">
+                        For business enquiries please use the form below
+                    </h3>
+                    <span class="main__form-subtitle">
+                        *Required
+                    </span>
+                    <div class="main__form-wrapper">
+                        <div class="main__form-item">
+                            <input class="main__form-input validation" type="text" id="name">
+                            <label class="main__form-label" for="name">Name<span class="main__form-suplabel">*</span></label>
+                        </div>
+                        <div class="main__form-item">
+                            <input class="main__form-input validation" type="text" id="company">
+                            <label class="main__form-label" for="company">Company<span class="main__form-suplabel">*</span></label>
+                        </div>
+                        <div class="main__form-item">
+                            <input class="main__form-input main__form-mail validation" type="email" id="mail">
+                            <label class="main__form-label" for="mail">E-mail<span class="main__form-suplabel">*</span></label>
+                        </div>
+                        <div class="main__form-item">
+                            <input class="main__form-input main__form-phone" type="tel" id="phone">
+                            <label class="main__form-label" for="phone">Phone</label>
+                        </div>
+                        <div class="main__form-item">
+                            <input class="main__form-input" type="text" id="subject">
+                            <label class="main__form-label" for="subject">Subject</label>
+                        </div>
+                        <div class="main__form-item">
+                            <textarea class="main__form-textarea main__form-message validation" type="text" id="message"></textarea>
+                            <label class="main__form-label" for="message">Message<span class="main__form-suplabel">*</span></label>
+                        </div>
+                    </div>
+                    <div class="main__form-accept">
+                        <input class="main__form-accept__check" id="checkbox" type="checkbox" checked required>
+                        <label for="checkbox" class="main__form-accept__text">I accept <a href="#" class="main__form-accept__link">Terms and Privacy Policy</a></label>
+                    </div>
+                    <button class="main__form-submit" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
